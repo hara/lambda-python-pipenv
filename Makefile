@@ -23,6 +23,7 @@ bundle:
 clean:
 	rm -f $(ZIP_FILE)
 	rm -rf $(BASE_DIR)/vendor
+	rm -f $(BASE_DIR)/requirements.txt
 
 .PHONY: init
 init:
