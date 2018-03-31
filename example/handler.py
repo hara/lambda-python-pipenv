@@ -15,4 +15,4 @@ def hello_world(event, context):
 
 
 if __name__ == '__main__':
-    print(handler({}, None))
+    print(hello_world({}, None))
