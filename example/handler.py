@@ -1,10 +1,8 @@
 import sys
 import os
 
-EXAMPLE_ROOT = os.path.dirname(os.path.abspath(__file__))
-EXAMPLE_VENDOR = os.path.join(os.path.dirname(EXAMPLE_ROOT), 'vendor')
-
-sys.path.append(EXAMPLE_VENDOR)
+vendor = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'vendor')
+sys.path.append(vendor)
 
 import requests
 

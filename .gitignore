@@ -1,7 +1,8 @@
 *.py[co]
 
-/.vscode
+.vscode
 
-/requirements.txt
-/vendor
-/bundle.zip
+vendor
+requirements.txt
+bundle.zip
+packaged.yaml
