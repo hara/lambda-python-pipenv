@@ -35,7 +35,7 @@ deploy:
 
 .PHONY: clean
 clean:
-	find $(BASE_DIR)/example/vendor -mindepth 1 -maxdepth 1 -not -name __init__.py | xargs rm -rf
+	find $(BASE_DIR)/src/vendor -mindepth 1 -maxdepth 1 -not -name __init__.py | xargs rm -rf
 	rm -f $(BASE_DIR)/requirements.txt
 
 .PHONY: init
@@ -45,4 +45,4 @@ init:
 .PHONY: vendor
 vendor: init
 	pipenv lock --requirements > $(BASE_DIR)/requirements.txt
-	pipenv run pip --disable-pip-version-check install --no-binary :all: -U -t $(BASE_DIR)/example/vendor -r $(BASE_DIR)/requirements.txt
+	pipenv run pip --disable-pip-version-check install --no-binary :all: -U -t $(BASE_DIR)/src/vendor -r $(BASE_DIR)/requirements.txt
