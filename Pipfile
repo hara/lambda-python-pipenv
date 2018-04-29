@@ -12,7 +12,7 @@ yapf = "*"
 pytest = "*"
 mypy = "*"
 pytest-pythonpath = "*"
-"boto3" = "*"
+"boto3" = "==1.7.0"
 
 [requires]
 python_version = "3.6"
