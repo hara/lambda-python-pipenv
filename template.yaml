@@ -10,4 +10,4 @@ Resources:
       Runtime: python3.6
       Environment:
         Variables:
-          PYTHONPATH: /var/task/vendor:/var/task/runtime
+          PYTHONPATH: /var/task/vendor:/var/runtime
