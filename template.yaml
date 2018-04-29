@@ -11,3 +11,4 @@ Resources:
       Environment:
         Variables:
           PYTHONPATH: /var/task/vendor:/var/runtime
+          S3_ENDPOINT:

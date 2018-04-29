@@ -10,7 +10,8 @@ Sample app of AWS Lambda.
 
 ```
 $ make build
-$ sam local generate-event schedule | sam local invoke "HelloWorldFunction"
+$ docker-compose up
+$ sam local generate-event schedule | sam local invoke "HelloWorldFunction" --docker-network <<network>>
 ```
 
 ## Bundle
